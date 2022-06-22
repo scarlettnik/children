@@ -132,12 +132,12 @@ class Registration extends React.Component{
                                     Имя:<input type={"text"} id = "fName"/><br/>
                                     Фамилия:<input type={"text"} id = "sName"/><br/>
                                     Отчество:<input type={"text"} id = "tName"/><br/>
-                                    Дата рождения (дд.мм.гггг):<input type={"text"} id = "wasBorn"/><br/>
+                                    Дата рождения:<input  style={{marginLeft:"15px"}} type={"date"} id = "wasBorn"/><br/>
                                     email:<input type={"text"} id = "email"/><br/>
                                     Номер телефона:<input type={"text"} id = "mobilePhone"/><br/>
 
                                 </form>
-                                <button style={{ width:"94%"}} onClick={alert("Код выслан")} onClick={()=>{registrationAttempt(context)}}>Выслать код</button>
+                                <button style={{ width:"94%"}} onClick={()=>{registrationAttempt(context)}}>Выслать код</button>
                                 <div style={this.state.codeWasSent?{display:"inline-block"}:{display:"none"}}>
                                     <div>
                                         Полученный код<input type={"text"} id = "code"/>
