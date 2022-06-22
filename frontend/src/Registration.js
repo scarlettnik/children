@@ -126,6 +126,7 @@ class Registration extends React.Component{
                         return (
                             <div className="login form" style={{marginLeft:"40%"}}>
                                 <form>
+                                    <div style={{textAlign:"center", fontSize:"110%"}}>Регистрация следователя</div>
                                     Логин:<input type={"text"} id = "login"/><br/>
                                     Пароль:<input type={"text"} id = "password"/><br/>
                                     Повторите пароль:<input type={"text"} id = "r-password"/><br/>
