@@ -83,6 +83,7 @@ class Protocol extends React.Component{
                     (context)=>{
                         return (<div style={style} className="login form">
                                 <div >
+                                        <div style={{fontSize:"105%"}}>Введите данные для создания протокола</div>
                                         <input  type={"text"} id={"FCs"} placeholder={"ФИО следователя"}/>
                                         <input  type={"text"} id={"city"} placeholder={"Город"}/>
                                         <input  type={"text"} id={"address"} placeholder={"Адрес"}/>
@@ -92,13 +93,6 @@ class Protocol extends React.Component{
                                         <input  type={"text"} id={"victim"} placeholder={"Пострадавший"}/>
                                         <button style={{width:"300px"}} onClick={()=>{addProtocol(context)}}>Добавить</button>
                                 </div>
-                                        
-                                        
-                                        
-                                        
-                                    
-                                   
-                                   
                                 </div>                   
 
                             )
